@@ -1,0 +1,7 @@
+.el-input{
+  display: inherit;
+}
+.el-input__inner{
+  width: 300px;
+  line-height: 44px;
+}
