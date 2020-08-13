@@ -18,7 +18,16 @@ export default new Router({
     {
       path: '/admin',
       name: 'admin',
-      component:()=>import('@/page/admin/admin.vue')
-    }
+      component:()=>import('@/components/admin.vue'),
+      children: [{
+        path:'test',
+        component:()=>import('@/page/test/test.vue')
+      },
+      {
+        path:'test1',
+        component:()=>import('@/page/test1/test1.vue')
+      }
+      ]
+    },
   ]
 })

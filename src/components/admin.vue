@@ -1,0 +1,45 @@
+<template>
+ <div>
+   <el-header class="header">标头栏</el-header>
+   <el-container>
+     <el-aside class="aside"><slide-menu></slide-menu>我字去哪里了</el-aside>
+     <el-main class="main">
+       <!-- <div class="navbar"></div> -->
+       <router-view></router-view></el-main>
+   </el-container >
+ </div>
+</template>
+
+<script>
+  import slideMenu from './slidemenu/slidemenu.vue'
+  export default{
+    components:{
+      slideMenu,
+    },
+  }
+</script>
+
+<style scoped lang="less">
+  @H-height:60px;
+  .aside{
+    position: relative;
+    background-color: #545c64;
+    height: calc(100vh - @H-height);
+  }
+  .header{
+    position: relative;
+    background-color: #545c64;
+  }
+  .main{
+    position: relative;
+    height: calc(100vh - @H-height);
+  }
+  // .navbar{
+  //   position: relative;
+  //   top: 0px;
+  //   left: -20px;
+  //   width: calc(100% + 20px);
+  //   height: 50px;
+  //   background-color: green;
+  // }
+</style>
