@@ -2,7 +2,7 @@
  <div>
    <el-header class="header">标头栏</el-header>
    <el-container>
-     <el-aside class="aside"><slide-menu></slide-menu>我字去哪里了</el-aside>
+     <el-aside class="aside"><slide-menu class="slidemenu"></slide-menu></el-aside>
      <el-main class="main">
        <!-- <div class="navbar"></div> -->
        <router-view></router-view></el-main>
@@ -33,6 +33,11 @@
   .main{
     position: relative;
     height: calc(100vh - @H-height);
+  }
+  .slidemenu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
   // .navbar{
   //   position: relative;
