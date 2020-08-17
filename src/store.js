@@ -3,7 +3,34 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex)
 
-const store=new Vuex.Store({
-  state:{}
+const state = {
+    changeMenu: '',
+    tagMenuList: []
+};
+const getters = {
+
+}
+const mutations = {
+    /*当前选中的菜单*/
+    changeMenu(state,value) {
+        state.changeMenu = value===undefined ? '': value.name
+        sessionStorage.setItem("selectedMenu", value===undefined ? '{}' : JSON.stringify(value));
+    },
+    /*当前显示的标签页*/
+    changeTagMenu(state,value) {
+        state.tagMenuList = value
+        sessionStorage.setItem("tagMenuList", JSON.stringify(value));
+    },
+};
+
+
+const actions = {
+
+};
+
+export default new Vuex.Store({
+    state,
+    mutations,
+    getters,
+    actions
 })
-export default store
