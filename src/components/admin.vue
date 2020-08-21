@@ -1,6 +1,6 @@
 <template>
  <div>
-   <el-header class="header">标头栏</el-header>
+   <el-header class="header"><span><navhead></navhead></span></el-header>
    <el-container>
      <el-aside class="aside"><slide-menu class="slidemenu"></slide-menu></el-aside>
      <el-main class="main">
@@ -12,9 +12,11 @@
 
 <script>
   import slideMenu from './slidemenu/slidemenu.vue'
+   import navhead from './navhead/navhead.vue'
   export default{
     components:{
       slideMenu,
+      navhead
     },
   }
 </script>
