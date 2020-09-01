@@ -33,32 +33,34 @@
               id: 1,
               name: "2",
               icon: "el-icon-message",
-              alias: "用户列表"
+              alias: "学习列表"
             },
             childs:[
               {
               entity: {
                   id: 9,
                   name: "2-2",
-                   to:"/admin/test1",
+                  to:"/admin/test1",
                   icon: "el-icon-message",
-                  alias: "用户列表"
+                  alias: "hello vue"
                 },
               },
               {
               entity: {
                   id: 10,
                   name: "2-3",
+                  to:"/admin/test2",
                   icon: "el-icon-message",
-                  alias: "用户列表"
+                  alias: "echart"
                 },
               },
               {
               entity: {
                   id: 11,
                   name: "2-4",
+                  to:"/admin/testcode",
                   icon: "el-icon-message",
-                  alias: "用户列表"
+                  alias: "代码试验场",
                 },
               },
             ],

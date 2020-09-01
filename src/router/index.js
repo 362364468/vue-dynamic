@@ -26,7 +26,15 @@ export default new Router({
       {
         path:'test1',
         component:()=>import('@/page/test1/test1.vue')
-      }
+      },
+      {
+        path:'test2',
+        component:()=>import('@/page/test2/test2.vue')
+      },
+			{
+			  path:'testcode',
+			  component:()=>import('@/page/testcode/testcode.vue')
+			}
       ]
     },
   ]
