@@ -23,15 +23,7 @@
         const myChart = this.$echarts.init(chart)
         const option = {
            xAxis: {
-                  axisLabel: {
-                         show: true,
-                          textStyle: {
-                            color: '#c3dbff',  //更改坐标轴文字颜色
-                            fontSize : 20      //更改坐标轴文字大小
-                  },
-                  },
                   type: 'category',
-                  boundaryGap: false,
                   data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
               },
               yAxis: {
@@ -39,8 +31,7 @@
               },
               series: [{
                   data: [820, 932, 901, 934, 1290, 1330, 1320],
-                  type: 'line',
-                  areaStyle: {}
+                  type: 'line'
               }]
         }//需要引进echart图表的代码，需要什么例子可以在官方例子
         myChart.setOption(option)

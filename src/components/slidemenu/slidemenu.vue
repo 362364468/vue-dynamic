@@ -70,8 +70,36 @@
               id: 2,
               name: "3",
               icon: "el-icon-message",
-              alias: "信息列表"
+              alias: "echart实验场"
             },
+            childs:[{
+              entity: {
+                id: 12,
+                name: "3-1",
+                to:"/admin/test3",
+                icon: "el-icon-message",
+                alias: "实验场1"
+              },
+            },
+            {
+              entity: {
+                id: 13,
+                name: "3-2",
+                to:"/admin/test4",
+                icon: "el-icon-message",
+                alias: "实验场2"
+              },
+            },
+            {
+              entity: {
+                id: 14,
+                name: "3-3",
+                to:"/admin/test5",
+                icon: "el-icon-message",
+                alias: "实验场3"
+              },
+            },
+            ]
           },
           {
             entity: {

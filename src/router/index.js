@@ -34,7 +34,19 @@ export default new Router({
 			{
 			  path:'testcode',
 			  component:()=>import('@/page/testcode/testcode.vue')
-			}
+			},
+      {
+        path:'test3',
+        component:()=>import('@/page/test3/test3.vue')
+      },
+      {
+        path:'test4',
+        component:()=>import('@/page/test4/test4.vue')
+      },
+      {
+        path:'test5',
+        component:()=>import('@/page/test5/test5.vue')
+      },
       ]
     },
   ]
