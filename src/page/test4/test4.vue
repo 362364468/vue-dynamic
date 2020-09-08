@@ -1,22 +1,42 @@
 <template>
-  <div ref="chart" style="width: 100%;height: 100%;">
+  <div style="width: 100%;height: 100%;">
+   <!-- <div ref="chart" style="width: 100%;height: 100%;">
+    </div> -->
+    <!-- <div id="all-map" style="width: 100%;height: 100%;" ></div> -->
+    <div id="container" style="width: 100%;height: 100%;" ></div>
   </div>
 </template>
 
 <script>
+  // import AMap from 'AMap'
+  // import AMapUI from 'AMapUI'
+  // import AMapJS from "amap-js"
   export default{
     data(){
       return{
-         msg: 'Hello Vue.',
-          msg1: '',
-          msg2: '',
-          msg3: ''
+         // msg: 'Hello Vue.',
+         //  msg1: '',
+         //  msg2: '',
+         //  msg3: ''
       }
     },
     mounted(){
       this.getEchartData()
+      this.GaodeMap()
     },
     methods:{
+      GaodeMap(){
+        console.log(true)
+        var map = new AMap.Map('container', {
+        zoom:11,//级别
+        center: [116.397428, 39.90923],//中心点坐标
+        viewMode:'3D'//使用3D视图
+        });
+        // AMap.plugin(['AMap.ToolBar', 'AMap.Scale'], function () {
+        // map.addControl(new AMap.ToolBar())
+        // map.addControl(new AMap.Scale())
+        // })
+      },
       getEchartData(){
        const chart = this.$refs.chart
        if (chart) {

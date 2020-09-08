@@ -6,6 +6,8 @@ import store from './store'
 import router from './router'
 import element from 'element-ui'
 import echarts from 'echarts'
+// import AMapfrom 'vue-amap';
+// Vue.use(AMap);
 import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(element)
 Vue.prototype.$echarts = echarts
